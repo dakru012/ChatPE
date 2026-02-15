@@ -1,0 +1,65 @@
+{
+    "dataset": "yahpogym_experiments_ds_tunability",
+    "questions": [
+        {
+            "id": "L1_01",
+            "level": 1,
+            "question": "How many experiments were executed in total?"
+        },
+        {
+            "id": "L1_02",
+            "level": 1,
+            "question": "What is the average setup_time across all experiments?"
+        },
+        {
+            "id": "L1_03",
+            "level": 1,
+            "question": "List all distinct values of scenario."
+        },
+        {
+            "id": "L1_04",
+            "level": 1,
+            "question": "How many experiments were run on machine n2cn1069?"
+        },
+        {
+            "id": "L2_01",
+            "level": 2,
+            "question": "Plot the average setup_time grouped by scenario."
+        },
+        {
+            "id": "L2_02",
+            "level": 2,
+            "question": "Show how many experiments were executed per machine and visualize the distribution as a bar chart."
+        },
+        {
+            "id": "L2_03",
+            "level": 2,
+            "question": "For each scenario, plot the success rate (done = 1)."
+        },
+        {
+            "id": "L2_04",
+            "level": 2,
+            "question": "Visualize how setup_time varies across different machines using a boxplot."
+        },
+        {
+            "id": "L3_01",
+            "level": 3,
+            "question": "Compare the average setup_time between the scenario rbv2_ranger and lcbench. Perform a statistical test and report whether the difference is significant."
+        },
+        {
+            "id": "L3_02",
+            "level": 3,
+            "question": "Compare the success rate (done) across machines. Which machine performs best, and is the difference statistically significant?"
+        },
+        {
+            "id": "L3_03",
+            "level": 3,
+            "question": "For each dataset, compute the average normalized setup time (setup_time divided by normalization_value) and rank the datasets accordingly."
+        },
+        {
+            "id": "L3_04",
+            "level": 3,
+            "question": "Compute the time difference between start_date and end_date for completed runs and compare it to the reported setup_time. Are there systematic discrepancies?"
+        }
+    ]
+}

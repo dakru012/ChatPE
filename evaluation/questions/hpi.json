@@ -1,0 +1,65 @@
+{
+    "dataset": "hpi",
+    "questions": [
+        {
+            "id": "HPI_L1_01",
+            "level": 1,
+            "question": "How many experiments were executed per optimizer_id?"
+        },
+        {
+            "id": "HPI_L1_02",
+            "level": 1,
+            "question": "What is the average number of trials per benchmark_id?"
+        },
+        {
+            "id": "HPI_L1_03",
+            "level": 1,
+            "question": "List all experiments that ended with an error."
+        },
+        {
+            "id": "HPI_L1_04",
+            "level": 1,
+            "question": "Compute the average time_budget grouped by task_type."
+        },
+        {
+            "id": "HPI_L2_01",
+            "level": 2,
+            "question": "Compute the total number of function calls per experiment."
+        },
+        {
+            "id": "HPI_L2_02",
+            "level": 2,
+            "question": "For each id, calculate the average final cost using the last recorded trajectory entry per experiment."
+        },
+        {
+            "id": "HPI_L2_03",
+            "level": 2,
+            "question": "For each experiment, compute the total runtime."
+        },
+        {
+            "id": "HPI_L2_04",
+            "level": 2,
+            "question": "For each task, compute the average best cost reached within the first 50 trials."
+        },
+        {
+            "id": "HPI_L3_01",
+            "level": 3,
+            "question": "For each id, compute the convergence curve (best-so-far cost over n_function_calls), aggregate it across seeds, and visualize the mean curve with variance bands."
+        },
+        {
+            "id": "HPI_L3_02",
+            "level": 3,
+            "question": "Identify experiments that exceeded their time_budget and analyze whether they also show higher final cost compared to experiments that respected the budget."
+        },
+        {
+            "id": "HPI_L3_03",
+            "level": 3,
+            "question": "For each task, compare optimizers by (1) average final cost, (2) total function calls, and (3) runtime efficiency (cost improvement per second), then rank the optimizers."
+        },
+        {
+            "id": "HPI_L3_04",
+            "level": 3,
+            "question": "Detect stagnation phases by identifying experiments where the best cost did not improve over the last 20% of trials."
+        }
+    ]
+}

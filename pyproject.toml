@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chat_pe"
+version = "0.1.0"
+description = "A Machine Learning Research Assistant for PyExperimenter"
+readme = "README.MD"
+requires-python = ">=3.9"
+authors = [
+    { name = "Daniel Kruse" }
+]
+dependencies = [
+    "numpy==2.3.5",
+    "pandas==2.3.3",
+    "scikit-learn==1.8.0",
+    "scipy==1.16.3",
+    "joblib==1.5.3",
+    "matplotlib==3.10.8",
+    "pillow==12.1.0",
+    "rich==14.2.0",
+    "tqdm==4.67.1",
+    "flask==3.1.2",
+    "flask-cors==6.0.2",
+    "requests==2.32.5",
+    "py-experimenter==1.4.2",
+    "openai==2.14.0",
+    "omegaconf==2.3.0",
+    "pyyaml==6.0.3",
+    "typer==0.20.0",
+    "mysql-connector-python==9.2.0",
+    "sqlalchemy==2.0.38",
+    "seaborn==0.13.2"
+]
+
+[project.scripts]
+chat-pe = "chat_pe.launcher:launch"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["chat_pe*"]

@@ -1,0 +1,279 @@
+Option A: SQLite (.db)
+chat-pe --db path/to/my_data.db --table experiments
+
+Option B: Live MySQL/MariaDB Server
+chat-pe --db_provider mysql --db my_database_name --db_host localhost --db_user root --db_password my_secret --table experiments
+
+
+chat-pe --db .\example_project\py_experimenter.db --table example_general_usage
+chat-pe --db_provider mysql --db mysql --db_host localhost --db_user root --table yahpogym_experiments_ds_tunability
+
+python evaluation/benchmark.py --db_provider mysql --db mysql --db_host localhost --db_user root --table yahpogym_experiments_ds_tunability --questions evaluation/questions/yahpogym_experiments_ds_tunability.json --arch react
+
+
+
+=== HPI_L1_01: Experiments per optimizer_id ===
+optimizer_id
+fanova__adjust_prev_cfgs_set_to_default_dynamic_decay_down                                     4
+fanova__adjust_prev_cfgs_set_to_default_dynamic_decay_up                                       3
+fanova__adjust_prev_cfgs_set_to_default_thresh_0.75                                            1
+fanova__adjust_prev_cfgs_set_to_incumbent_dynamic_decay_down                                   9
+fanova__adjust_prev_cfgs_set_to_incumbent_dynamic_decay_up                                     7
+fanova__adjust_prev_cfgs_set_to_incumbent_thresh_0.5                                           3
+fanova__adjust_prev_cfgs_set_to_random_dynamic_decay_up                                        2
+fanova__adjust_prev_cfgs_set_to_random_thresh_0.5                                              6
+fanova__adjust_prev_cfgs_set_to_random_thresh_0.75                                             9
+fanova_adjust_cs_default_adjust_prev_cfgs_set_to_default_dynamic_decay_up                      2
+fanova_adjust_cs_default_adjust_prev_cfgs_set_to_default_thresh_0.5                            1
+fanova_adjust_cs_default_adjust_prev_cfgs_set_to_incumbent_dynamic_decay_down                  3
+fanova_adjust_cs_default_adjust_prev_cfgs_set_to_incumbent_dynamic_decay_up                    4
+fanova_adjust_cs_default_adjust_prev_cfgs_set_to_incumbent_thresh_0.5                          1
+fanova_adjust_cs_default_adjust_prev_cfgs_set_to_incumbent_thresh_0.75                         5
+fanova_adjust_cs_default_adjust_prev_cfgs_set_to_random_thresh_0.75                            3
+fanova_adjust_cs_default_constant_adjust_prev_cfgs_set_to_default_thresh_0.75                  3
+fanova_adjust_cs_default_constant_adjust_prev_cfgs_set_to_incumbent_dynamic_decay_up           2
+fanova_adjust_cs_default_constant_adjust_prev_cfgs_set_to_random_dynamic_decay_down            3
+fanova_adjust_cs_default_constant_adjust_prev_cfgs_set_to_random_thresh_0.5                    2
+fanova_adjust_cs_default_constant_adjust_prev_cfgs_set_to_random_thresh_0.75                   2
+fanova_adjust_cs_default_constant_dynamic_decay_up                                             1
+fanova_adjust_cs_default_constant_thresh_0.5                                                   1
+fanova_adjust_cs_default_cs_proba_hpi_adjust_prev_cfgs_set_to_default_dynamic_decay_down       1
+fanova_adjust_cs_default_cs_proba_hpi_adjust_prev_cfgs_set_to_default_dynamic_decay_up         2
+fanova_adjust_cs_default_cs_proba_hpi_adjust_prev_cfgs_set_to_default_thresh_0.5               1
+fanova_adjust_cs_default_cs_proba_hpi_adjust_prev_cfgs_set_to_default_thresh_0.75              3
+fanova_adjust_cs_default_cs_proba_hpi_adjust_prev_cfgs_set_to_incumbent_dynamic_decay_down     5
+fanova_adjust_cs_default_cs_proba_hpi_adjust_prev_cfgs_set_to_incumbent_dynamic_decay_up       1
+fanova_adjust_cs_default_cs_proba_hpi_adjust_prev_cfgs_set_to_incumbent_thresh_0.75            3
+fanova_adjust_cs_default_cs_proba_hpi_adjust_prev_cfgs_set_to_random_thresh_0.75               1
+fanova_adjust_cs_default_cs_proba_hpi_thresh_0.5                                               1
+fanova_adjust_cs_default_dynamic_decay_down                                                    2
+fanova_adjust_cs_default_dynamic_decay_up                                                      4
+fanova_adjust_cs_default_thresh_0.75                                                           2
+fanova_adjust_cs_incumbent_adjust_prev_cfgs_set_to_default_dynamic_decay_up                    3
+fanova_adjust_cs_incumbent_adjust_prev_cfgs_set_to_default_thresh_0.5                         10
+fanova_adjust_cs_incumbent_adjust_prev_cfgs_set_to_default_thresh_0.75                         3
+fanova_adjust_cs_incumbent_adjust_prev_cfgs_set_to_incumbent_dynamic_decay_down                1
+fanova_adjust_cs_incumbent_adjust_prev_cfgs_set_to_incumbent_thresh_0.5                        3
+fanova_adjust_cs_incumbent_adjust_prev_cfgs_set_to_random_dynamic_decay_down                   1
+fanova_adjust_cs_incumbent_adjust_prev_cfgs_set_to_random_dynamic_decay_up                     1
+fanova_adjust_cs_incumbent_adjust_prev_cfgs_set_to_random_thresh_0.5                           1
+fanova_adjust_cs_incumbent_adjust_prev_cfgs_set_to_random_thresh_0.75                          4
+fanova_adjust_cs_incumbent_constant_adjust_prev_cfgs_set_to_default_dynamic_decay_down         1
+fanova_adjust_cs_incumbent_constant_adjust_prev_cfgs_set_to_default_dynamic_decay_up           2
+fanova_adjust_cs_incumbent_constant_adjust_prev_cfgs_set_to_default_thresh_0.75                2
+fanova_adjust_cs_incumbent_constant_adjust_prev_cfgs_set_to_incumbent_dynamic_decay_down       3
+fanova_adjust_cs_incumbent_constant_adjust_prev_cfgs_set_to_incumbent_dynamic_decay_up         2
+fanova_adjust_cs_incumbent_constant_adjust_prev_cfgs_set_to_incumbent_thresh_0.75              6
+fanova_adjust_cs_incumbent_constant_adjust_prev_cfgs_set_to_random_dynamic_decay_up            2
+fanova_adjust_cs_incumbent_constant_adjust_prev_cfgs_set_to_random_thresh_0.5                  1
+fanova_adjust_cs_incumbent_constant_adjust_prev_cfgs_set_to_random_thresh_0.75                 2
+fanova_adjust_cs_incumbent_constant_dynamic_decay_down                                         3
+fanova_adjust_cs_incumbent_constant_dynamic_decay_up                                           1
+fanova_adjust_cs_incumbent_constant_thresh_0.5                                                 2
+fanova_adjust_cs_incumbent_cs_proba_hpi_adjust_prev_cfgs_set_to_default_thresh_0.75            1
+fanova_adjust_cs_incumbent_cs_proba_hpi_adjust_prev_cfgs_set_to_incumbent_dynamic_decay_up     3
+fanova_adjust_cs_incumbent_cs_proba_hpi_adjust_prev_cfgs_set_to_incumbent_thresh_0.75          5
+fanova_adjust_cs_incumbent_cs_proba_hpi_adjust_prev_cfgs_set_to_random_dynamic_decay_up        1
+fanova_adjust_cs_incumbent_cs_proba_hpi_adjust_prev_cfgs_set_to_random_thresh_0.75             1
+fanova_adjust_cs_incumbent_cs_proba_hpi_dynamic_decay_down                                     2
+fanova_adjust_cs_incumbent_cs_proba_hpi_thresh_0.75                                            6
+fanova_adjust_cs_incumbent_dynamic_decay_down                                                  3
+fanova_adjust_cs_incumbent_thresh_0.5                                                          3
+fanova_adjust_cs_incumbent_thresh_0.75                                                         1
+fanova_adjust_cs_random_adjust_prev_cfgs_set_to_incumbent_dynamic_decay_up                     1
+fanova_adjust_cs_random_adjust_prev_cfgs_set_to_random_dynamic_decay_up                        1
+fanova_adjust_cs_random_constant_adjust_prev_cfgs_set_to_default_dynamic_decay_up              2
+fanova_adjust_cs_random_constant_adjust_prev_cfgs_set_to_incumbent_dynamic_decay_down          1
+fanova_adjust_cs_random_constant_adjust_prev_cfgs_set_to_incumbent_dynamic_decay_up            1
+fanova_adjust_cs_random_constant_adjust_prev_cfgs_set_to_incumbent_thresh_0.5                  1
+fanova_adjust_cs_random_constant_adjust_prev_cfgs_set_to_random_thresh_0.75                    2
+fanova_adjust_cs_random_constant_dynamic_decay_down                                            1
+fanova_adjust_cs_random_constant_thresh_0.5                                                    3
+fanova_adjust_cs_random_constant_thresh_0.75                                                   4
+fanova_adjust_cs_random_cs_proba_hpi_adjust_prev_cfgs_set_to_default_dynamic_decay_down        5
+fanova_adjust_cs_random_cs_proba_hpi_adjust_prev_cfgs_set_to_default_thresh_0.5                7
+fanova_adjust_cs_random_cs_proba_hpi_adjust_prev_cfgs_set_to_default_thresh_0.75               5
+fanova_adjust_cs_random_cs_proba_hpi_adjust_prev_cfgs_set_to_incumbent_thresh_0.5              4
+fanova_adjust_cs_random_cs_proba_hpi_adjust_prev_cfgs_set_to_incumbent_thresh_0.75             1
+fanova_adjust_cs_random_cs_proba_hpi_adjust_prev_cfgs_set_to_random_dynamic_decay_down         5
+fanova_adjust_cs_random_cs_proba_hpi_adjust_prev_cfgs_set_to_random_dynamic_decay_up           5
+fanova_adjust_cs_random_cs_proba_hpi_adjust_prev_cfgs_set_to_random_thresh_0.5                10
+fanova_adjust_cs_random_cs_proba_hpi_adjust_prev_cfgs_set_to_random_thresh_0.75                5
+fanova_adjust_cs_random_cs_proba_hpi_dynamic_decay_down                                        3
+fanova_adjust_cs_random_cs_proba_hpi_thresh_0.5                                                3
+fanova_adjust_cs_random_cs_proba_hpi_thresh_0.75                                               8
+fanova_adjust_cs_random_dynamic_decay_down                                                     1
+fanova_adjust_cs_random_dynamic_decay_up                                                       3
+fanova_adjust_cs_random_thresh_0.5                                                            14
+fanova_adjust_cs_random_thresh_0.75                                                           10
+
+=== HPI_L1_02: Avg trials per benchmark_id ===
+benchmark_id
+Pymoo    227.927336
+
+=== HPI_L1_03: Experiments with error ===
+Empty DataFrame
+Columns: [ID, optimizer_id, benchmark_id]
+Index: []
+
+=== HPI_L1_04: Avg time_budget per task_type ===
+task_type
+multi-objective    NaN
+
+=== HPI_L2_01: Total function calls per experiment (Summary stats) ===
+count    289.000000
+mean     222.934256
+std       36.412173
+min       76.000000
+25%      232.000000
+50%      237.000000
+75%      239.000000
+max      239.000000
+
+=== HPI_L2_02: Avg final cost per benchmark_id ===
+benchmark_id
+Pymoo    1.565235
+
+=== HPI_L2_03: Total runtime per experiment (Summary stats) ===
+count    289.000000
+mean     159.553633
+std       61.086102
+min       13.000000
+25%      119.000000
+50%      178.000000
+75%      206.000000
+max      269.000000
+
+=== HPI_L2_04: Avg best cost (first 50 calls) per task_id ===
+task_id
+multi-objective/50/dev/Pymoo/MO/unconstraint/kursawe   -9.988875
+multi-objective/50/dev/Pymoo/MO/unconstraint/zdt1       1.709944
+multi-objective/50/dev/Pymoo/MO/unconstraint/zdt2       2.373481
+multi-objective/50/dev/Pymoo/MO/unconstraint/zdt6       4.178985
+
+=== HPI_L3_01: Convergence curves (Global sample) ===
+First 20 steps of mean convergence curve across all experiments:
+                      mean       std
+n_function_calls                    
+0                 2.575925  0.734593
+1                 2.316575  0.860132
+2                 2.271107  0.928243
+3                 1.940670  1.285955
+4                 1.988990  1.106758
+5                 2.208220  0.944191
+6                 2.027876  1.258647
+7                 2.034907  1.664186
+8                 1.987740  1.240348
+9                 2.057736  1.023463
+10                2.104975  0.539656
+11                1.679156  1.771565
+12                2.412487  0.918933
+13                1.877510  0.010236
+14                1.877811  0.893650
+15                2.020635  0.515465
+16                1.975481  0.786473
+17                1.965670  1.726539
+18                1.920485  1.701169
+19                1.702196  0.000000
+
+=== HPI_L3_02: Budget analysis ===
+SKIPPED: time_budget is null for all records.
+
+=== HPI_L3_03: Optimizer comparison ===
+                                                                                            cost_numeric  n_function_calls  efficiency
+optimizer_id                                                                                                                          
+fanova_adjust_cs_incumbent_constant_adjust_prev_cfgs_set_to_default_dynamic_decay_up          -10.331370         86.500000    0.440028
+fanova_adjust_cs_random_cs_proba_hpi_adjust_prev_cfgs_set_to_incumbent_thresh_0.5              -4.006272        159.750000    0.355483
+fanova_adjust_cs_random_dynamic_decay_up                                                       -2.092763        182.666667    0.162201
+fanova__adjust_prev_cfgs_set_to_random_thresh_0.75                                             -0.746229        194.333333    0.149348
+fanova_adjust_cs_random_cs_proba_hpi_adjust_prev_cfgs_set_to_random_thresh_0.75                -0.602835        207.400000    0.114809
+fanova_adjust_cs_random_thresh_0.75                                                             0.449888        219.900000    0.073144
+fanova_adjust_cs_incumbent_adjust_prev_cfgs_set_to_incumbent_dynamic_decay_down                 1.379864        233.000000    0.006698
+fanova_adjust_cs_incumbent_adjust_prev_cfgs_set_to_random_thresh_0.5                            1.392812        234.000000    0.006861
+fanova_adjust_cs_incumbent_cs_proba_hpi_adjust_prev_cfgs_set_to_random_dynamic_decay_up         1.408499        235.000000    0.011359
+fanova_adjust_cs_random_constant_adjust_prev_cfgs_set_to_incumbent_thresh_0.5                   1.450309        239.000000    0.013554
+fanova_adjust_cs_incumbent_adjust_prev_cfgs_set_to_random_dynamic_decay_down                    1.466127        239.000000    0.006725
+fanova_adjust_cs_incumbent_cs_proba_hpi_dynamic_decay_down                                      1.482851        239.000000    0.009911
+fanova_adjust_cs_default_cs_proba_hpi_adjust_prev_cfgs_set_to_incumbent_dynamic_decay_up        1.486479        239.000000    0.005922
+fanova_adjust_cs_incumbent_adjust_prev_cfgs_set_to_random_thresh_0.75                           1.511277        231.000000    0.009625
+fanova_adjust_cs_incumbent_cs_proba_hpi_adjust_prev_cfgs_set_to_default_thresh_0.75             1.512487        239.000000    0.006123
+fanova_adjust_cs_default_cs_proba_hpi_adjust_prev_cfgs_set_to_incumbent_dynamic_decay_down      1.516992        234.600000    0.008995
+fanova_adjust_cs_incumbent_constant_adjust_prev_cfgs_set_to_incumbent_dynamic_decay_up          1.534182        237.500000    0.007486
+fanova_adjust_cs_incumbent_cs_proba_hpi_adjust_prev_cfgs_set_to_incumbent_dynamic_decay_up      1.537139        238.333333    0.008504
+fanova_adjust_cs_random_adjust_prev_cfgs_set_to_incumbent_dynamic_decay_up                      1.550285        236.000000    0.006770
+fanova_adjust_cs_default_adjust_prev_cfgs_set_to_incumbent_thresh_0.5                           1.553594        239.000000    0.007433
+fanova_adjust_cs_incumbent_constant_adjust_prev_cfgs_set_to_random_dynamic_decay_up             1.555189        238.500000    0.011040
+fanova_adjust_cs_default_cs_proba_hpi_adjust_prev_cfgs_set_to_incumbent_thresh_0.75             1.569475        234.666667    0.006757
+fanova_adjust_cs_default_thresh_0.75                                                            1.577389        235.000000    0.010639
+fanova_adjust_cs_incumbent_adjust_prev_cfgs_set_to_random_dynamic_decay_up                      1.579052        239.000000    0.006926
+fanova_adjust_cs_incumbent_constant_adjust_prev_cfgs_set_to_random_thresh_0.75                  1.581373        238.000000    0.011310
+fanova_adjust_cs_incumbent_constant_adjust_prev_cfgs_set_to_random_thresh_0.5                   1.597074        238.000000    0.010108
+fanova_adjust_cs_default_adjust_prev_cfgs_set_to_random_thresh_0.75                             1.611332        239.000000    0.007187
+fanova__adjust_prev_cfgs_set_to_incumbent_thresh_0.5                                            1.628403        238.666667    0.008754
+fanova__adjust_prev_cfgs_set_to_incumbent_dynamic_decay_up                                      1.629430        237.571429    0.009966
+fanova_adjust_cs_default_constant_dynamic_decay_up                                              1.660199        237.000000    0.010185
+fanova_adjust_cs_default_adjust_prev_cfgs_set_to_incumbent_dynamic_decay_down                   1.663848        238.333333    0.009033
+fanova_adjust_cs_incumbent_thresh_0.75                                                          1.669990        228.000000    0.013150
+fanova_adjust_cs_default_adjust_prev_cfgs_set_to_incumbent_dynamic_decay_up                     1.671541        237.500000    0.012290
+fanova_adjust_cs_incumbent_dynamic_decay_down                                                   1.672937        238.000000    0.010016
+fanova_adjust_cs_random_constant_thresh_0.75                                                    1.680707        238.250000    0.013041
+fanova_adjust_cs_random_cs_proba_hpi_adjust_prev_cfgs_set_to_random_dynamic_decay_up            1.690821        237.400000    0.011834
+fanova_adjust_cs_default_cs_proba_hpi_adjust_prev_cfgs_set_to_random_thresh_0.75                1.694238        237.000000    0.007597
+fanova_adjust_cs_random_cs_proba_hpi_dynamic_decay_down                                         1.709332        237.666667    0.007600
+fanova_adjust_cs_default_constant_adjust_prev_cfgs_set_to_random_dynamic_decay_down             1.717086        237.666667    0.011310
+fanova_adjust_cs_incumbent_constant_dynamic_decay_down                                          1.720690        238.666667    0.008387
+fanova_adjust_cs_random_cs_proba_hpi_thresh_0.75                                                1.744678        234.125000    0.010879
+fanova_adjust_cs_default_adjust_prev_cfgs_set_to_incumbent_thresh_0.75                          1.747904        238.000000    0.009972
+fanova_adjust_cs_random_adjust_prev_cfgs_set_to_random_dynamic_decay_up                         1.754579        239.000000    0.009536
+fanova_adjust_cs_default_constant_adjust_prev_cfgs_set_to_random_thresh_0.75                    1.764213        236.500000    0.008887
+fanova_adjust_cs_incumbent_constant_adjust_prev_cfgs_set_to_default_thresh_0.75                 1.769032        239.000000    0.017057
+fanova_adjust_cs_random_cs_proba_hpi_adjust_prev_cfgs_set_to_random_dynamic_decay_down          1.777518        236.200000    0.011225
+fanova_adjust_cs_random_cs_proba_hpi_thresh_0.5                                                 1.789398        235.000000    0.008327
+fanova__adjust_prev_cfgs_set_to_random_thresh_0.5                                               1.801301        237.666667    0.011318
+fanova_adjust_cs_random_cs_proba_hpi_adjust_prev_cfgs_set_to_default_dynamic_decay_down         1.801796        231.600000    0.010854
+fanova_adjust_cs_incumbent_constant_adjust_prev_cfgs_set_to_incumbent_dynamic_decay_down        1.805315        235.666667    0.010545
+fanova_adjust_cs_incumbent_constant_dynamic_decay_up                                            1.822121        239.000000    0.009344
+fanova_adjust_cs_random_constant_adjust_prev_cfgs_set_to_incumbent_dynamic_decay_down           1.825705        222.000000    0.010315
+fanova_adjust_cs_default_dynamic_decay_up                                                       1.828404        237.500000    0.012112
+fanova_adjust_cs_incumbent_constant_adjust_prev_cfgs_set_to_incumbent_thresh_0.75               1.830643        235.666667    0.011175
+fanova_adjust_cs_default_constant_adjust_prev_cfgs_set_to_incumbent_dynamic_decay_up            1.831709        239.000000    0.013604
+fanova_adjust_cs_random_constant_thresh_0.5                                                     1.831713        237.333333    0.011276
+fanova__adjust_prev_cfgs_set_to_random_dynamic_decay_up                                         1.839836        238.000000    0.012693
+fanova_adjust_cs_incumbent_adjust_prev_cfgs_set_to_incumbent_thresh_0.5                         1.849606        238.666667    0.009207
+fanova_adjust_cs_default_cs_proba_hpi_adjust_prev_cfgs_set_to_default_dynamic_decay_up          1.863342        222.000000    0.011669
+fanova_adjust_cs_random_constant_adjust_prev_cfgs_set_to_incumbent_dynamic_decay_up             1.877685        239.000000    0.009204
+fanova_adjust_cs_random_constant_adjust_prev_cfgs_set_to_random_thresh_0.75                     1.895818        238.500000    0.013059
+fanova_adjust_cs_default_dynamic_decay_down                                                     1.935911        237.500000    0.008588
+fanova_adjust_cs_default_cs_proba_hpi_adjust_prev_cfgs_set_to_default_thresh_0.5                1.938210        239.000000    0.009318
+fanova_adjust_cs_random_cs_proba_hpi_adjust_prev_cfgs_set_to_default_thresh_0.5                 1.958355        227.285714    0.011145
+fanova_adjust_cs_default_cs_proba_hpi_adjust_prev_cfgs_set_to_default_thresh_0.75               1.961456        230.666667    0.011877
+fanova_adjust_cs_default_constant_adjust_prev_cfgs_set_to_default_thresh_0.75                   1.989342        228.666667    0.014171
+fanova_adjust_cs_incumbent_adjust_prev_cfgs_set_to_default_dynamic_decay_up                     2.003363        231.666667    0.011771
+fanova_adjust_cs_random_dynamic_decay_down                                                      2.010096        238.000000    0.009137
+fanova__adjust_prev_cfgs_set_to_default_dynamic_decay_down                                      2.014796        236.750000    0.011823
+fanova_adjust_cs_default_adjust_prev_cfgs_set_to_default_dynamic_decay_up                       2.017541        234.000000    0.009977
+fanova_adjust_cs_random_cs_proba_hpi_adjust_prev_cfgs_set_to_incumbent_thresh_0.75              2.028245        229.000000    0.010619
+fanova_adjust_cs_default_constant_thresh_0.5                                                    2.029440        238.000000    0.010047
+fanova_adjust_cs_incumbent_constant_thresh_0.5                                                  2.030579        238.500000    0.011133
+fanova_adjust_cs_incumbent_cs_proba_hpi_thresh_0.75                                             2.038345        221.000000    0.030446
+fanova_adjust_cs_incumbent_adjust_prev_cfgs_set_to_default_thresh_0.75                          2.039515        238.000000    0.016645
+fanova_adjust_cs_incumbent_cs_proba_hpi_adjust_prev_cfgs_set_to_random_thresh_0.75              2.089334        234.000000    0.008324
+fanova_adjust_cs_random_constant_dynamic_decay_down                                             2.103006        238.000000    0.010515
+fanova_adjust_cs_default_cs_proba_hpi_adjust_prev_cfgs_set_to_default_dynamic_decay_down        2.152334        236.000000    0.009609
+fanova_adjust_cs_random_constant_adjust_prev_cfgs_set_to_default_dynamic_decay_up               2.185183        232.500000    0.011610
+fanova_adjust_cs_default_adjust_prev_cfgs_set_to_default_thresh_0.5                             2.210027        229.000000    0.011050
+fanova__adjust_prev_cfgs_set_to_incumbent_dynamic_decay_down                                    2.245612        215.666667    0.033167
+fanova_adjust_cs_random_cs_proba_hpi_adjust_prev_cfgs_set_to_random_thresh_0.5                  2.263493        217.400000    0.023530
+fanova_adjust_cs_incumbent_cs_proba_hpi_adjust_prev_cfgs_set_to_incumbent_thresh_0.75           2.270096        198.000000    0.045617
+fanova__adjust_prev_cfgs_set_to_default_dynamic_decay_up                                        2.276956        200.000000    0.012565
+fanova_adjust_cs_incumbent_adjust_prev_cfgs_set_to_default_thresh_0.5                           2.440933        212.300000    0.041753
+fanova_adjust_cs_random_thresh_0.5                                                              2.456818        200.928571    0.046221
+fanova_adjust_cs_incumbent_thresh_0.5                                                           2.604117        199.666667    0.039944
+fanova_adjust_cs_default_constant_adjust_prev_cfgs_set_to_random_thresh_0.5                     2.737566        190.500000    0.078712
+fanova_adjust_cs_random_cs_proba_hpi_adjust_prev_cfgs_set_to_default_thresh_0.75                3.033245        177.600000    0.047780
+fanova_adjust_cs_default_cs_proba_hpi_thresh_0.5                                                4.031442        134.000000    0.103370
+fanova__adjust_prev_cfgs_set_to_default_thresh_0.75                                             4.139195        119.000000    0.133522
+fanova_adjust_cs_incumbent_constant_adjust_prev_cfgs_set_to_default_dynamic_decay_down          4.228833        146.000000    0.105721
+
+=== HPI_L3_04: Stagnation detection ===
+Found 106 stagnated experiments out of 289. Sample IDs: [2, 3, 6, 32, 35, 39, 62, 119, 142, 163]

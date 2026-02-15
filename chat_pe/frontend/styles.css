@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* App container */
+.app {
+  width: 100%;
+  max-width: 900px;
+  height: 90vh;
+  background: white;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+/* Header */
+.header {
+  padding: 14px 20px;
+  border-bottom: 1px solid #1e293b;
+  background: #00509B;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+
+/* Chat area */
+.chat-window {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Message rows */
+.message-row {
+  display: flex;
+}
+
+.message-row.user {
+  justify-content: flex-end;
+}
+
+.message-row.agent {
+  justify-content: flex-start;
+}
+
+/* Message bubbles */
+.message {
+  max-width: 70%;
+  padding: 12px 14px;
+  border-radius: 14px;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  font-size: 14px;
+}
+
+.message.user {
+  background: #00509B;
+  color: white;
+  border-bottom-right-radius: 4px;
+}
+
+.message.agent {
+  background: #00509B;
+  color: #e5e7eb;
+  border-bottom-left-radius: 4px;
+}
+
+/* Image styling */
+.image-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.message-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #1e293b;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+.download-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 80, 155, 0.8);
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.2s, opacity 0.2s;
+  opacity: 0.6;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.download-btn:hover {
+  background: rgba(0, 80, 155, 1);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Input area */
+.chat-input {
+  display: flex;
+  padding: 14px;
+  border-top: 1px solid #1e293b;
+  background: white;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #1e293b;
+  background: white;
+  color: black;
+  font-size: 14px;
+  outline: none;
+}
+
+.chat-input input::placeholder {
+  color: #64748b;
+}
+
+.chat-input button {
+  margin-left: 10px;
+  padding: 0 16px;
+  border-radius: 10px;
+  border: none;
+  background: #00509B;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background: #00509B;
+}

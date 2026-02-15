@@ -1,0 +1,65 @@
+{
+    "dataset": "example_dataset",
+    "questions": [
+        {
+            "id": "L1_01",
+            "level": 1,
+            "question": "How many experiments were executed in total?"
+        },
+        {
+            "id": "L1_02",
+            "level": 1,
+            "question": "What is the average test_accuracy for each kernel?"
+        },
+        {
+            "id": "L1_03",
+            "level": 1,
+            "question": "How many experiments failed?"
+        },
+        {
+            "id": "L1_04",
+            "level": 1,
+            "question": "List all distinct datasets used in the experiments."
+        },
+        {
+            "id": "L2_01",
+            "level": 2,
+            "question": "Visualize the distribution of test_accuracy across all experiments."
+        },
+        {
+            "id": "L2_02",
+            "level": 2,
+            "question": "Show a bar chart comparing the mean test_f1 score for each dataset."
+        },
+        {
+            "id": "L2_03",
+            "level": 2,
+            "question": "Plot the average test_accuracy per kernel grouped by dataset."
+        },
+        {
+            "id": "L2_04",
+            "level": 2,
+            "question": "How many experiments failed, and what were the common error messages?"
+        },
+        {
+            "id": "L3_01",
+            "level": 3,
+            "question": "Compare the test_accuracy between the linear and rbf kernels across all datasets. Perform a statistical test to determine whether the difference is significant."
+        },
+        {
+            "id": "L3_02",
+            "level": 3,
+            "question": "For each dataset, identify the best-performing kernel based on mean test_f1, then visualize the comparison."
+        },
+        {
+            "id": "L3_03",
+            "level": 3,
+            "question": "Compute the generalization gap per kernel, identify which kernel shows the smallest average gap, and visualize the comparison."
+        },
+        {
+            "id": "L3_04",
+            "level": 3,
+            "question": "Compare training and test accuracy for each kernel and determine whether there is evidence of overfitting. Visualize the differences."
+        }
+    ]
+}
