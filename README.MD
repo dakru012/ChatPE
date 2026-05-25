@@ -8,7 +8,7 @@ To install Chat-PE in development mode (recommended), follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git https://github.com/LUH-AI/MLProject_Daniel_Kruse_AgenticPyExperimenterDash/tree/main
+   git clone https://github.com/dakru012/ChatPE
    cd Chat_PE
    ```
 
